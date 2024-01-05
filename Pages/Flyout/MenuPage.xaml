@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiAppLabs.Pages.Flyout.MenuPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="☰­"
+    IsVisible="True">
+    <ContentPage.Content>
+        <StackLayout
+            Padding="0,30"
+            BackgroundColor="#4A5C60"
+            VerticalOptions="FillAndExpand">
+            <StackLayout
+                Margin="0,15"
+                HeightRequest="24"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                WidthRequest="80" />
+            <StackLayout HorizontalOptions="StartAndExpand" VerticalOptions="Center">
+                <ListView
+                    x:Name="ListViewMenu"
+                    BackgroundColor="Transparent"
+                    SelectionMode="None"
+                    SeparatorVisibility="Default"
+                    VerticalOptions="FillAndExpand"
+                    VerticalScrollBarVisibility="Default">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid
+                                    Padding="{OnPlatform Android='10',
+                                                         iOS='10,0'}"
+                                    BackgroundColor="Transparent"
+                                    RowSpacing="0"
+                                    VerticalOptions="Center">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="0.2*" />
+                                        <ColumnDefinition Width="0.8*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Image
+                                        Grid.Row="0"
+                                        Grid.Column="0"
+                                        Scale="1"
+                                        Source="{Binding IconeSrc}" />
+                                    <Label
+                                        Grid.Row="0"
+                                        Grid.Column="1"
+                                        FontSize="14"
+                                        Text="{Binding Titulo}"
+                                        TextColor="#FFFFFF" />
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

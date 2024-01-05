@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiAppLabs.Pages.CarouselView3"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:compatibility="clr-namespace:Microsoft.Maui.Controls.Compatibility;assembly=Microsoft.Maui.Controls"
+    Title="CarouselView3">
+    <ContentPage.Content>
+        <compatibility:RelativeLayout
+            Padding="0"
+            BackgroundColor="{DynamicResource backgroundColor}"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand">
+            <Label
+                x:Name="labelTitle"
+                compatibility:RelativeLayout.XConstraint="{compatibility:ConstraintExpression Type=RelativeToParent,
+                                                                                              Property=Width,
+                                                                                              Factor=0,
+                                                                                              Constant=18}"
+                compatibility:RelativeLayout.YConstraint="{compatibility:ConstraintExpression Type=RelativeToParent,
+                                                                                              Property=Height,
+                                                                                              Factor=0,
+                                                                                              Constant=0}"
+                BackgroundColor="{DynamicResource backgroundColor}"
+                HorizontalTextAlignment="Start"
+                Style="{DynamicResource LabelPageTarefasName}"
+                Text="Itens" />
+
+            <!--  RMSTabViewControl  -->
+            <ContentView
+                x:Name="tabControl"
+                Margin="0"
+                compatibility:RelativeLayout.HeightConstraint="{compatibility:ConstraintExpression Type=RelativeToParent,
+                                                                                                   Property=Height,
+                                                                                                   Factor=1,
+                                                                                                   Constant=-60}"
+                compatibility:RelativeLayout.WidthConstraint="{compatibility:ConstraintExpression Type=RelativeToParent,
+                                                                                                  Property=Width,
+                                                                                                  Factor=1,
+                                                                                                  Constant=-36}"
+                compatibility:RelativeLayout.XConstraint="{compatibility:ConstraintExpression Type=RelativeToView,
+                                                                                              ElementName=labelTitle,
+                                                                                              Property=X,
+                                                                                              Factor=1,
+                                                                                              Constant=0}"
+                compatibility:RelativeLayout.YConstraint="{compatibility:ConstraintExpression Type=RelativeToView,
+                                                                                              ElementName=labelTitle,
+                                                                                              Property=Y,
+                                                                                              Factor=1,
+                                                                                              Constant=50}"
+                AutomationId="tabControl"
+                BackgroundColor="{DynamicResource backgroundColor}"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand" />
+
+            <CarouselView ItemsSource="{Binding Monkeys}">
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <ContentView Padding="0,0,5,0">
+                            <StackLayout
+                                Margin="0"
+                                BackgroundColor="Transparent"
+                                VerticalOptions="FillAndExpand">
+                                <StackLayout
+                                    HeightRequest="30"
+                                    HorizontalOptions="FillAndExpand"
+                                    Orientation="Horizontal">
+                                    <Label
+                                        HorizontalOptions="Start"
+                                        HorizontalTextAlignment="Start"
+                                        Text="{Binding Name}"
+                                        VerticalOptions="Center"
+                                        VerticalTextAlignment="Center" />
+                                </StackLayout>
+                                <StackLayout
+                                    BackgroundColor="{DynamicResource backgroundColor}"
+                                    HorizontalOptions="FillAndExpand"
+                                    VerticalOptions="FillAndExpand">
+                                    <Frame
+                                        Padding="0"
+                                        BackgroundColor="white"
+                                        BorderColor="White"
+                                        CornerRadius="15"
+                                        HasShadow="{OnPlatform Android=True,
+                                                               iOS=False}"
+                                        MinimumHeightRequest="160"
+                                        VerticalOptions="FillAndExpand">
+                                        <Image
+                                            Aspect="AspectFill"
+                                            HeightRequest="250"
+                                            HorizontalOptions="FillAndExpand"
+                                            Source="{Binding ImageUrl}"
+                                            WidthRequest="250" />
+                                    </Frame>
+                                </StackLayout>
+                            </StackLayout>
+                        </ContentView>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+
+        </compatibility:RelativeLayout>
+    </ContentPage.Content>
+</ContentPage>

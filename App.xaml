@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Application
+    x:Class="MauiAppLabs.App"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiAppLabs">
+    <Application.Resources>
+        <ResourceDictionary>
+
+            <!--  Definição de fontes utilizadas  -->
+            <OnPlatform x:Key="FontRegular" x:TypeArguments="x:String">
+                <On Platform="iOS" Value="SFProDisplay-Regular" />
+                <On Platform="Android" Value="SFProDisplay-Regular.ttf#SFProDisplay" />
+            </OnPlatform>
+
+            <OnPlatform x:Key="FontBold" x:TypeArguments="x:String">
+                <On Platform="iOS" Value="SFProDisplay-Bold" />
+                <On Platform="Android" Value="SFProDisplay-Bold.ttf#SFProDisplay" />
+            </OnPlatform>
+
+            <OnPlatform x:Key="FontSemiBold" x:TypeArguments="x:String">
+                <On Platform="iOS" Value="SFProDisplay-Semibold" />
+                <On Platform="Android" Value="SFProDisplay-Semibold.ttf#SFProDisplay" />
+            </OnPlatform>
+
+            <!--  Definição de estilos  -->
+
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="{StaticResource backgroundColor}" />
+                <Setter Property="BarTextColor" Value="{StaticResource textColor}" />
+            </Style>
+            <!--  titulos  -->
+            <Style x:Key="LabelTitle" TargetType="Label">
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="TextColor" Value="{StaticResource textColor}" />
+                <Setter Property="FontSize" Value="20" />
+                <Setter Property="FontAttributes" Value="Bold" />
+            </Style>
+
+            <Style x:Key="LabelPageTarefasName" TargetType="Label">
+                <Setter Property="FontSize" Value="30" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="TextColor" Value="{StaticResource TextColorTitleTarefasPage}" />
+            </Style>
+
+            <Style x:Key="LabelGeralBold" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource textColor}" />
+                <Setter Property="FontFamily" Value="{StaticResource FontBold}" />
+                <Setter Property="VerticalTextAlignment" Value="Center" />
+                <Setter Property="FontSize" Value="14" />
+            </Style>
+
+            <Style x:Key="labelStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource textColor}" />
+                <Setter Property="FontFamily" Value="{StaticResource FontBold}" />
+                <Setter Property="VerticalTextAlignment" Value="Center" />
+                <Setter Property="FontSize" Value="18" />
+            </Style>
+
+            <Style x:Key="LabelGeralRegular" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource textColor}" />
+                <Setter Property="FontFamily" Value="{StaticResource FontRegular}" />
+                <Setter Property="VerticalTextAlignment" Value="Center" />
+                <Setter Property="FontSize" Value="14" />
+            </Style>
+
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
+                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
