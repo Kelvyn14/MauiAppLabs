@@ -65,6 +65,21 @@
                 <Setter Property="FontSize" Value="14" />
             </Style>
 
+            <!--  Estilo básico de Botão  -->
+            <Style x:Key="EstiloBasicoBotao" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource backgroundColor}" />
+                <Setter Property="BorderColor" Value="{StaticResource borderColorCian}" />
+                <Setter Property="TextColor" Value="{StaticResource textColor}" />
+                <Setter Property="HeightRequest" Value="50" />
+                <Setter Property="CornerRadius" Value="5" />
+                <Setter Property="Margin" Value="5" />
+                <Setter Property="FontSize" Value="{OnPlatform Android='16', iOS='18'}" />
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+                <!--<Setter Property="FontFamily" Value="{StaticResource FontBold}"></Setter>-->
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="CornerRadius" Value="26" />
+            </Style>
+
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
