@@ -19,6 +19,7 @@ public partial class App : Application
     //MainPage = new CarouselCodedView();
     //MainPage = new CarouselCodedView2();
     //MainPage = new FrameLayoutsPage();
-    MainPage = new ControlsPage();
+    //MainPage = new ControlsPage();
+    MainPage = new ListPage1();
   }
 }

@@ -30,13 +30,16 @@
         </VerticalStackLayout>
 
         <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
-        <Picker x:Name="pickerTest"
-                WidthRequest="300"/>
-            <Image Source="dotnet_bot.svg" BackgroundColor="Transparent" 
-                     WidthRequest="40" HeightRequest="40"
-                     HorizontalOptions="Center" VerticalOptions="FillAndExpand">
+            <Picker x:Name="pickerTest" WidthRequest="300" />
+            <Image
+                BackgroundColor="Transparent"
+                HeightRequest="40"
+                HorizontalOptions="Center"
+                Source="dotnet_bot.svg"
+                VerticalOptions="FillAndExpand"
+                WidthRequest="40">
                 <Image.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="Robot_Tapped"></TapGestureRecognizer>
+                    <TapGestureRecognizer Tapped="Robot_Tapped" />
                 </Image.GestureRecognizers>
             </Image>
         </HorizontalStackLayout>

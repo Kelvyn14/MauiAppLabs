@@ -80,6 +80,12 @@
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Compile Update="Pages\ListPages\ListPage1.xaml.cs">
+	    <DependentUpon>ListPage1.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
 	
 	<ItemGroup>
 	  <MauiXaml Update="Pages\Carousel2\CarouselPage2.xaml">
@@ -122,6 +128,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Pages\Frame Forms\FrameLayoutsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\ListPages\ListPage1.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
