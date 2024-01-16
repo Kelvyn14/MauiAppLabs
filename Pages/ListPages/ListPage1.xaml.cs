@@ -27,7 +27,7 @@ public partial class ListPage1 : ContentPage
     };
 
     BindingContext = this;
-    //stepList.ItemsSource = Lista;
+    stepList.ItemsSource = Lista;
   }
 
   private void Lista_ItemTapped(object sender, ItemTappedEventArgs e)

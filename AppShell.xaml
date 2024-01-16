@@ -7,9 +7,15 @@
     xmlns:views="clr-namespace:MauiAppLabs.Pages"
     Title="MauiAppLabs"
     BackgroundColor="#000"
-    FlyoutBackgroundColor="Aqua"
-    FlyoutIcon="paw.png"
+    FlyoutBackgroundColor="LightBlue"
+    FlyoutIcon="icons8menu.svg"
     Shell.FlyoutBehavior="Flyout">
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Icon="icons8menu.svg"
+        Route="MainPage" />
+
     <FlyoutItem Title="Cats" Icon="cat.png">
         <Tab>
             <ShellContent ContentTemplate="{DataTemplate views:CatsPage}" />
@@ -20,9 +26,5 @@
             <ShellContent ContentTemplate="{DataTemplate views:DogsPage}" />
         </Tab>
     </FlyoutItem>
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
 
 </Shell>

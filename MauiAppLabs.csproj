@@ -67,6 +67,7 @@
 	  <None Remove="Resources\Images\dotnet_bot.svg" />
 	  <None Remove="Resources\Images\elephant.png" />
 	  <None Remove="Resources\Images\help.png" />
+	  <None Remove="Resources\Images\icons8menu.svg" />
 	  <None Remove="Resources\Images\info.png" />
 	  <None Remove="Resources\Images\monkey.png" />
 	  <None Remove="Resources\Images\paw.png" />
@@ -75,6 +76,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />

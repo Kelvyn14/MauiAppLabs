@@ -9,7 +9,7 @@ public partial class App : Application
   {
     InitializeComponent();
 
-    //MainPage = new AppShell();
+    MainPage = new AppShell();
     //MainPage = new MasterPage();
     //MainPage = new FlyoutMasterPage();
     //MainPage = new CarouselPage();
@@ -20,6 +20,6 @@ public partial class App : Application
     //MainPage = new CarouselCodedView2();
     //MainPage = new FrameLayoutsPage();
     //MainPage = new ControlsPage();
-    MainPage = new ListPage1();
+    //MainPage = new ListPage1();
   }
 }

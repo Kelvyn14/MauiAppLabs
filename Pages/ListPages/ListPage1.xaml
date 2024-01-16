@@ -10,7 +10,6 @@
                 x:Name="stepList"
                 ItemAppearing="stepList_ItemAppearing"
                 ItemTapped="Lista_ItemTapped"
-                ItemsSource="{Binding Lista}"
                 RefreshControlColor="Blue"
                 RowHeight="180"
                 SelectionMode="None"
