@@ -34,6 +34,7 @@
                 FontSize="19"
                 HorizontalOptions="Fill"
                 IsVisible="true"
+                LineBreakMode="WordWrap"
                 Text="Show Animation and change text"
                 TextColor="White"
                 VerticalOptions="Fill" />
