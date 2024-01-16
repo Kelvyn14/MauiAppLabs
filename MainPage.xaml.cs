@@ -1,5 +1,5 @@
-﻿using MauiAppLabs.ViewModels;
-using System.ComponentModel;
+﻿using MauiAppLabs.Pages.PopupPages;
+using MauiAppLabs.ViewModels;
 
 namespace MauiAppLabs;
 
@@ -19,4 +19,9 @@ public partial class MainPage : ContentPage
     ViewModel.SetName("João e Maria - ");
   }
 
+  private async void BtnPopupPage_Clicked(object sender, EventArgs e)
+  {
+    // Show popup page
+    await Navigation.PushModalAsync(new MyPopupPage());
+  }
 }

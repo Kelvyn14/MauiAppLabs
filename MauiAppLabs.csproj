@@ -66,6 +66,7 @@
 	  <None Remove="Resources\Images\dotnet.png" />
 	  <None Remove="Resources\Images\dotnet_bot.svg" />
 	  <None Remove="Resources\Images\elephant.png" />
+	  <None Remove="Resources\Images\giphy.gif" />
 	  <None Remove="Resources\Images\help.png" />
 	  <None Remove="Resources\Images\icons8menu.svg" />
 	  <None Remove="Resources\Images\info.png" />
@@ -133,6 +134,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Pages\ListPages\ListPage1.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\PopupPages\MyPopupPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

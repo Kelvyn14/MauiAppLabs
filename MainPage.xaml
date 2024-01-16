@@ -39,6 +39,24 @@
                 TextColor="White"
                 VerticalOptions="Fill" />
 
+            <Button
+                x:Name="BtnPopupPage"
+                Margin="0"
+                Padding="10"
+                x:FieldModifier="protected"
+                BackgroundColor="#597abd"
+                Clicked="BtnPopupPage_Clicked"
+                CornerRadius="25"
+                FontFamily="SFProDisplay-Bold"
+                FontSize="19"
+                HorizontalOptions="Fill"
+                IsVisible="true"
+                LineBreakMode="WordWrap"
+                Text="Show popup"
+                TextColor="White"
+                VerticalOptions="Fill" />
+            
+
             <StackLayout>
                 <Label Text="{Binding Name}" />
             </StackLayout>
