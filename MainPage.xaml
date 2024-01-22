@@ -2,7 +2,8 @@
 <ContentPage
     x:Class="MauiAppLabs.MainPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:custom="clr-namespace:MauiAppLabs.Controls">
     <ScrollView>
         <VerticalStackLayout Padding="30,0" Spacing="25">
             <Image
@@ -22,7 +23,7 @@
                 Style="{StaticResource SubHeadline}"
                 Text="Welcome to &#10;.NET Multi-platform App UI" />
 
-            <Button
+            <custom:CustomButton
                 x:Name="BtnEntrar"
                 Margin="0"
                 Padding="10"
@@ -55,7 +56,7 @@
                 Text="Show popup"
                 TextColor="White"
                 VerticalOptions="Fill" />
-            
+
 
             <StackLayout>
                 <Label Text="{Binding Name}" />
