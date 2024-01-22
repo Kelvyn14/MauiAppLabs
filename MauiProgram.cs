@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 using Microsoft.Maui.Controls.Compatibility.Hosting;
+using ZXing.Net.Maui.Controls;
 
 namespace MauiAppLabs
 {
@@ -10,6 +11,7 @@ namespace MauiAppLabs
       var builder = MauiApp.CreateBuilder();
       builder
         .UseMauiApp<App>()
+        .UseBarcodeReader()
         .UseMauiCompatibility()        
         .ConfigureFonts(fonts =>
         {

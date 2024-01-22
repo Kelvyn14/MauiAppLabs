@@ -40,6 +40,23 @@
                 TextColor="White"
                 VerticalOptions="Fill" />
 
+            <custom:CustomButton
+                x:Name="BtnBarcodePage"
+                Margin="0"
+                Padding="10"
+                x:FieldModifier="protected"
+                BackgroundColor="#c79f0e"
+                Clicked="BtnBarcodePage_Clicked"
+                CornerRadius="25"
+                FontFamily="SFProDisplay-Bold"
+                FontSize="19"
+                HorizontalOptions="Fill"
+                IsVisible="true"
+                LineBreakMode="WordWrap"
+                Text="Leitor QR Code"
+                TextColor="White"
+                VerticalOptions="Fill" />
+
             <Button
                 x:Name="BtnPopupPage"
                 Margin="0"
