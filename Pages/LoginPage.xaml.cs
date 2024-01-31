@@ -1,7 +1,4 @@
-using System.Collections.Generic;
-using System.ComponentModel;
-
-namespace MauiAppLabs.Pages.Carousel;
+namespace MauiAppLabs.Pages;
 
 public partial class LoginPage : ContentPage
 {
