@@ -1,4 +1,5 @@
-﻿using MauiAppLabs.Pages.PopupPages;
+﻿using MauiAppLabs.Pages.Carousel;
+using MauiAppLabs.Pages.PopupPages;
 using MauiAppLabs.Pages.QRCode;
 using MauiAppLabs.ViewModels;
 
@@ -29,5 +30,10 @@ public partial class MainPage : ContentPage
   private async void BtnBarcodePage_Clicked(object sender, EventArgs e)
   {
     await Navigation.PushModalAsync(new QRCodeReaderPage());
+  }
+
+  private async void BtnLogin_Clicked(object sender, EventArgs e)
+  {
+    await Navigation.PushModalAsync(new NavigationPage(new LoginPage()));
   }
 }

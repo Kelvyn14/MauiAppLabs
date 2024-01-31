@@ -24,6 +24,23 @@
                 Text="Welcome to &#10;.NET Multi-platform App UI" />
 
             <custom:CustomButton
+                x:Name="BtnLogin"
+                Margin="0"
+                Padding="10"
+                x:FieldModifier="protected"
+                BackgroundColor="DarkBlue"
+                Clicked="BtnLogin_Clicked"
+                CornerRadius="25"
+                FontFamily="SFProDisplay-Bold"
+                FontSize="19"
+                HorizontalOptions="Fill"
+                IsVisible="true"
+                LineBreakMode="WordWrap"
+                Text="Do Login"
+                TextColor="White"
+                VerticalOptions="Fill" />
+
+            <custom:CustomButton
                 x:Name="BtnEntrar"
                 Margin="0"
                 Padding="10"
