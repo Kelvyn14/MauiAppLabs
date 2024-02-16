@@ -1,4 +1,4 @@
-﻿using MauiAppLabs.Pages.Carousel;
+﻿using MauiAppLabs.Pages;
 using MauiAppLabs.Pages.PopupPages;
 using MauiAppLabs.Pages.QRCode;
 using MauiAppLabs.ViewModels;

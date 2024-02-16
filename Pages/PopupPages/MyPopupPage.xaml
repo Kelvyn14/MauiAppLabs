@@ -13,25 +13,27 @@
         </Grid.GestureRecognizers>
 
         <Border
-            Margin="30"
-            Padding="30"
+            Margin="10"
+            Padding="20"            
             Background="White"
             StrokeShape="{RoundRectangle CornerRadius=20}"
-            VerticalOptions="End">
+            VerticalOptions="Fill">
 
-                <VerticalStackLayout>
+                <VerticalStackLayout Spacing="10">
                     <Label
                         FontSize="28"
                         HorizontalOptions="Fill"
                         LineBreakMode="WordWrap"
                         Text="This is a popup!"
                         TextColor="BlueViolet" />
+                <Grid>                    
                     <Image
                         x:Name="imgAnimated"
                         HorizontalOptions="Center"
                         IsAnimationPlaying="True"
                         Source="giphy.gif"
                         VerticalOptions="Center" />
+                </Grid>
                 </VerticalStackLayout>
 
         </Border>
